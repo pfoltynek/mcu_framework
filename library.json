@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
+  "name": "mcu_framework",
+  "version": "1.0.0",
+  "repository":
+  {
+      "type": "git",
+      "url": "https://github.com/pfoltynek/mcu_framework.git"
+  },
+  "authors":
+  {
+      "name": "Petr Foltýnek",
+      "email": "pfoltynek@outlook.cz"
+  },
+  "license": "MIT"
+  "frameworks": "*",
+  "platforms": "*"
+}
