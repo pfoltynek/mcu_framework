@@ -12,7 +12,7 @@
       "name": "Petr Foltýnek",
       "email": "pfoltynek@outlook.cz"
   },
-  "license": "MIT"
+  "license": "MIT",
   "frameworks": "*",
   "platforms": "*"
 }
