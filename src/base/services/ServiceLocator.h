@@ -13,7 +13,7 @@ private:
 public:
     static ServiceLocator& getInstance();
     void registerService(const std::string& name, IService* service);
-    virtual IService* getService(const std::string& name);
+    IService* getService(const std::string& name);
 };
 
 #endif //FRAMEWORK_SERVICELOCATOR_H
