@@ -4,8 +4,9 @@
 #include <unordered_map>
 #include <vector>
 #include <framework.h>
+#include <functional>
 
-using EventHandler = void (*)(IEvent*);
+using EventHandler = std::function<void(IEvent*)>;
 
 class EventService {
     private:
