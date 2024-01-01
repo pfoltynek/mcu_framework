@@ -10,11 +10,12 @@ class Module : public IModule {
     private:
         std::unordered_map<std::string, ISensor*> sensors;
     public:
-        Module();
         void setup() override;
         void loop() override;
         ~Module() override = default;
     protected:
+        Module();
+        virtual void registerModuleSensors() = 0;
         void registerSensor(const std::string& name, ISensor* sensor);
         ISensor* getSensor(const std::string& name);
 };

@@ -11,11 +11,13 @@ class Shell {
         std::vector<IModule*> modules;
     protected:
         Shell();
+        virtual void registerAppModules() = 0;
+        virtual void registerAppCoreServices() = 0;
         void registerModule(IModule *module);
         void registerService(const std::string& name, IService *service);
         ~Shell() = default;
     public:
-        virtual void setup() = 0;
+        virtual void setup();
         virtual void loop();
 };
 

@@ -5,8 +5,12 @@ Module::Module()
     sensors = std::unordered_map<std::string, ISensor*>();
 }
 
-void Module::setup() {
+void Module::registerModuleSensors() {
 
+}
+
+void Module::setup() {
+    registerModuleSensors();
 }
 
 void Module::loop() {

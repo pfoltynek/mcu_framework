@@ -5,11 +5,10 @@ Shell::Shell() {
     modules = std::vector<IModule*>();
 }
 
-void Shell::registerModule(IModule *module) {
-    modules.push_back(module);
-    module->setup();
+void Shell::setup() {
+    registerAppCoreServices();
+    registerAppModules();
 }
-
 void Shell::loop() {
     for (auto module : modules) {
         module->loop();
@@ -19,4 +18,9 @@ void Shell::loop() {
 void Shell::registerService(const std::string& name,IService *service) {
     ServiceLocator& services = ServiceLocator::getInstance();
     services.registerService(name, service);
+}
+
+void Shell::registerModule(IModule *module) {
+    modules.push_back(module);
+    module->setup();
 }
