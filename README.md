@@ -1,2 +1,2 @@
 # mcu_framework
-Platform independent framework for microcontrollers. 
+Modular platform independent framework for microcontrollers. 
