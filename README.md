@@ -1,7 +1,7 @@
 # mcu_framework
 **Modular platform independent framework for microcontrollers.**
 
-This framework provides a modular and platform-independent approach to developing applications for microcontrollers. It includes various classes and methods for managing events, services, modules, and the overall application shell.
+This framework provides a modular and platform-independent approach to developing applications for microcontrollers. It includes various classes and methods for managing events, services, modules, and the overall application shell. Implementation details are described in the article - DOI: [10.3390/s24103116](https://www.mdpi.com/1424-8220/24/10/3116).
 
 ### Features
 - Event management
